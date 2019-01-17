@@ -40,6 +40,8 @@ spec:
           value: {{ .Values.awsRegion }}
         - name: LOG_GROUP_NAME
           value: {{ .Values.logGroupName }}
+        - name: LOG_RETENTION_IN_DAYS
+          value: {{ .Values.logRetentionInDays }}
 {{- if not .Values.awsRole }}
 {{- if .Values.awsAccessKeyId }}
         - name: AWS_ACCESS_KEY_ID

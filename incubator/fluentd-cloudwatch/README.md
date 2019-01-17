@@ -63,6 +63,7 @@ The following table lists the configurable parameters of the Fluentd Cloudwatch 
 | `awsSecretAccessKey`            | AWS Secret Access Key of a AWS user with a policy to access Cloudwatch    | `nil`                                 |
 | `fluentdConfig`                 | Fluentd configuration                                                     | `example configuration`               |
 | `logGroupName`                  | AWS Cloudwatch log group                                                  | `kubernetes`                          |
+| `logRetentionInDays`            | AWS Cloudwatch log retention in days                                      | `nil`                                 |
 | `rbac.create`                   | If true, create & use RBAC resources                                      | `false`                               |
 | `rbac.serviceAccountName`       | existing ServiceAccount to use (ignored if rbac.create=true)              | `default`                             |
 | `tolerations`                   | Add tolerations                                                           | `[]`                                  |
